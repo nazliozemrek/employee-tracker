@@ -16,13 +16,12 @@ VALUES ('Sales'),('Engineering'),('Finance'),('Legal');
   INSERT INTO employee (first_name, last_name,role_id,manager_id)
 VALUES
   ('Ronald', 'Firbank',1,2),
-  ('Virginia', 'Woolf',0,2),
-  ('Piers', 'Gaveston',0,1),
-  ('Charles', 'LeRoi',0,2),
-  ('Katherine', 'Mansfield',0,1),
-  ('Dora', 'Carrington',0,1),
-  ('Edward', 'Bellamy',0,1),
-  ('Montague', 'Summers',0,2),
-  ('Octavia', 'Butler',0,1),
-  ('Unica', 'Zurn',0,2);
- 
+  ('Virginia', 'Woolf',1,2),
+  ('Piers', 'Gaveston',2,1),
+  ('Charles', 'LeRoi',2,2),
+  ('Katherine', 'Mansfield',3,1),
+  ('Dora', 'Carrington',3,1),
+  ('Edward', 'Bellamy',4,1),
+  ('Montague', 'Summers',4,2),
+  ('Octavia', 'Butler',2,1),
+  ('Unica', 'Zurn',2,2);
