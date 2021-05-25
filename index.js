@@ -1,8 +1,10 @@
+// Required packages to use the app
+// The reason I used Delimeter in schema.sql,it just created the tables only with that
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
 const cTable =require('console.table');
 const { response } = require('express');
-
+// to be able to connect mysql server
 const db  = mysql.createConnection(
     {
         host: 'localhost',
@@ -14,6 +16,7 @@ const db  = mysql.createConnection(
         if(err) throw (err);
         startQuestion();
     })
+// using inquirer package to get user input
 function startQuestion () {
     inquirer.prompt ( [
         {
@@ -58,6 +61,7 @@ function startQuestion () {
         }
     });
 }
+// Showin and updating tables from mysql
 function viewAllEmployees() {
     db.query(`SELECT * FROM employee `, 
     function(err, res) {
